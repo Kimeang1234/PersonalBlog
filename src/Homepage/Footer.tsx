@@ -9,8 +9,8 @@ function Footer() {
   return (
     <div className="flex gap-5 container">
       {imageFiles.map((image, i) => (
-        <a href="https:example.com" target="_blank" className="w-10 h-10 transition items-center ease-in-out delay-100 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-gray-400 duration-300 text-center">
-          <img src={image} key={i} alt="image" className="rounded-full " />
+        <a href="https://github.com/Kimeang1234/PersonalBlog" className="w-10 h-10 transition items-center ease-in-out delay-100 rounded-full hover:-translate-y-1 hover:scale-110 hover:bg-gray-400 duration-300 text-center">
+          <img src={image} key={i} alt="imagePhoto" className="rounded-full " />
         </a>
       ))}
     </div>
