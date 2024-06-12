@@ -14,12 +14,12 @@ function Blogfooter() {
         <li className="text-white font-bold">Flexibilty</li>
         <li className="text-white font">Productivity</li>
       </ul>
-      <footer className=" text-primary md:w-1/3 mx-auto text-center">
-        <h1 className='pt-20  pb-6 text-4xl'>Chhon Kimeang</h1>
-        <h2 className='pt-5 text-sm md:text-lg px-3'>For situations where the user has specified that they prefer reduced motion, you can conditionally apply animations and transitions using the motion-safe and motion-reduce variants.</h2>
-        <div className="pt-20 mx-auto w-1/3 pb-7 ">
+      <footer className="text-primary pb-10 md:mx-auto text-center">
+        <h1 className='pt-20  pb-6 md:text-4xl text-3xl font-bold'>Chhon Kimeang</h1>
+        <h2 className='py-6 text-lg md:text-lg px-3'>For situations where the user has specified that they prefer reduced motion, you can conditionally apply animations and transitions using the motion-safe and motion-reduce variants.</h2>
+          <div className=" mx-auto w-1/2 md:w-1/3 md:pt-10 md:pl-6">
             <Footer />
-        </div>
+          </div>
       </footer>
     </div>
   )

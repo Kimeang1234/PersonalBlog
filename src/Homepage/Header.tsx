@@ -9,11 +9,11 @@ function Header() {
   ]
 
   return (
-    <div className="justify-between xl:py-2 xl:px-8 align-middle items-center border-b-[1px] flex">
-      <h1 className=" p-3 xl:text-3xl text-md font-bold">Dealiest Blog</h1>
+    <div className="justify-between px-1 py-4 xl:py-2 xl:px-8 align-middle items-center border-b-[1px] flex">
+      <h1 className="md:text-3xl text-md font-bold lg:pl-7">Dealiest Blog</h1>
       <div className="flex gap-3 md:gap-5 pr-3 md:pr-6 list-none">
         {headerLink.map((link) => (
-         <a href={link.url} target='_blank' key={link.id} className=" text-center text-sm xl:text-lg xl:px-6 xl:py-4 transition items-center ease-in-out delay-100 rounded-full xl:hover:-translate-y-1 xl:hover:scale-110 xl:hover:bg-primary xl:duration-300"> 
+         <a href={link.url} target='_blank' key={link.id} className="xl:shadow-md text-center text-sm md:text-lg lg:text-2xl lg:px-3 lg:py-6 xl:px-6 xl:py-4 transition items-center ease-in-out delay-100 rounded-full xl:hover:-translate-y-1 xl:hover:scale-110 xl:hover:bg-primary xl:duration-300"> 
          {link.text}
        </a>       
         ))}
