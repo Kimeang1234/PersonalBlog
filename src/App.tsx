@@ -6,9 +6,9 @@ import Cloud from 'images/Cloud.jpg'
 function App() {
   return (
     <div>
+      <Aboutp />
       <HomeWeb />
       <Blogweb />
-      <Aboutp />
     </div>
   )
 }
