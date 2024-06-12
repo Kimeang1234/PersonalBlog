@@ -8,7 +8,7 @@ function App() {
     <div>
       <HomeWeb />
       <Blogweb />
-      {/* <Aboutp /> */}
+      <Aboutp />
     </div>
   )
 }
