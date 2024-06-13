@@ -16,6 +16,12 @@ function Blogfooter() {
         <li className="text-white font-bold">Build</li>
         <li className="text-white font">Remote</li>
         <li className="text-white font-bold">Word</li>
+        <li className="text-white font">UX</li>
+        <li className="text-white font-bold">Design</li>
+        <li className="text-white font">UI</li>
+        <li className="text-white font-bold">Build</li>
+        <li className="text-white font">Remote</li>
+        <li className="text-white font-bold">Word</li>
       </ul>
       <footer className="text-primary lg:w-1/4 pb-10 md:mx-auto text-center">
         <h1 className='pt-20  pb-6 md:text-4xl text-3xl font-bold'>Chhon Kimeang</h1>

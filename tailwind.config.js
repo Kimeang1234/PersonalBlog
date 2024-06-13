@@ -5,6 +5,10 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ["Open Sans", "sans-serif"],
+      display2: ["teko", "sans-serif"],
+      display3: ["PT-serif", "serif"],
+      display4: ["Roboto Mono", "monospace"],
+      display5: ["Roboto", "sans-serif"],
     },
     extend: {
 
