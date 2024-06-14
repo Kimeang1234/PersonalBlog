@@ -12,6 +12,7 @@ function Blogweb() {
       id: 1,
       content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
       image: grayball,
+      url: "www.example.com",
     },
     {
       title: "How to make a website",
@@ -20,6 +21,7 @@ function Blogweb() {
       id: 2,
       content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
       image: grayball,
+      url: "www.example.com",
     },
     {
       title: "How to make a website",
@@ -28,6 +30,7 @@ function Blogweb() {
       id: 3,
       content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
       image: grayball,
+      url: "www.example.com",
     },
     {
       title: "How to make a website",
@@ -36,6 +39,7 @@ function Blogweb() {
       id: 4,
       content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
       image: grayball,
+      url: "www.example.com",
     },
     {
       title: "How to make a website This is a blog post about how to make a website",
@@ -44,6 +48,7 @@ function Blogweb() {
       id: 5,
       content: "  This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make a website",
       image: grayball,
+      url: "www.example.com",
     },
     {
       title: "How to make a website",
@@ -52,6 +57,7 @@ function Blogweb() {
       id: 6,
       content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
       image: grayball,
+      url: "https://www.facebook.com/",
     },
   ]
 
@@ -62,16 +68,18 @@ function Blogweb() {
       <h1 className="text-center pb-10 font-semibold font-display3 text-2xl md:text-3xl lg:text-4xl">What to read next</h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20"> 
         {blogposts.map((blogs) => (
-          <ul key={blogs.id} className="p-3">
-            <li className=" bg-gray-100 rounded-3xl">
-              <img className="rounded-t-3xl w-full" src={blogs.image} alt="blog" />
-              <div className="p-6 lg:p-8 xl:p-10">
-                <h1 className="font-semibold line-clamp-1 font-display3 text-xl md:text-2xl lg:text-3xl">{blogs.title}</h1>
-                <p className=" line-clamp-3 pt-5 text-base md:text-lg font-display5 lg:text-xl">{blogs.content}</p>
-              </div>
-            </li>
-          </ul>
-        ))}
+            <a href={blogs.url} target="_blank">
+              <ul key={blogs.id} className="p-3">
+                <li className=" bg-gray-100 rounded-3xl">
+                  <img className="rounded-t-3xl w-full" src={blogs.image} alt="blog" />
+                  <div className="p-6 lg:p-8 xl:p-10">
+                    <h1 className="font-semibold line-clamp-1 font-display3 text-xl md:text-2xl underline lg:text-3xl">{blogs.title}</h1>
+                    <p className=" line-clamp-3 pt-5 text-base md:text-lg font-display5 lg:text-xl">{blogs.content}</p>
+                  </div>
+                </li>
+              </ul>
+            </a>
+          ))}
       </div>
       </div>
       <div className="p-6 md:p-10">
