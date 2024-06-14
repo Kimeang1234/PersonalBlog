@@ -70,7 +70,7 @@ function Blogweb() {
           {blogposts.map((blogs) => (
               <a href={blogs.url} target="_blank">
                 <ul key={blogs.id} className="p-3">
-                  <li className=" bg-gray-100 rounded-3xl">
+                  <li className=" bg-gray-200 rounded-3xl">
                     <img className="rounded-t-3xl w-full" src={blogs.image} alt="blog" />
                     <div className="p-6 lg:p-8 xl:p-10">
                       <h1 className="font-semibold line-clamp-1 font-display3 text-xl md:text-2xl lg:text-3xl hover:underline">{blogs.title}</h1>
