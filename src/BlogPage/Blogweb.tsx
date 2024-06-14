@@ -73,7 +73,7 @@ function Blogweb() {
                 <li className=" bg-gray-100 rounded-3xl">
                   <img className="rounded-t-3xl w-full" src={blogs.image} alt="blog" />
                   <div className="p-6 lg:p-8 xl:p-10">
-                    <h1 className="font-semibold line-clamp-1 font-display3 text-xl md:text-2xl underline lg:text-3xl">{blogs.title}</h1>
+                    <h1 className="font-semibold line-clamp-1 font-display3 text-xl md:text-2xl lg:text-3xl hover:underline">{blogs.title}</h1>
                     <p className=" line-clamp-3 pt-5 text-base md:text-lg font-display5 lg:text-xl">{blogs.content}</p>
                   </div>
                 </li>
