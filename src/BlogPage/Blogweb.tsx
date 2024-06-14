@@ -68,7 +68,7 @@ function Blogweb() {
         <h1 className="text-center pb-10 font-semibold font-display3 text-2xl md:text-3xl lg:text-4xl">What to read next</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20"> 
           {blogposts.map((blogs) => (
-              <a href={blogs.url} target="_blank">
+              <a href={blogs.url}>
                 <ul key={blogs.id} className="p-3">
                   <li className=" bg-gray-200 rounded-3xl">
                     <img className="rounded-t-3xl w-full" src={blogs.image} alt="blog" />

@@ -2,10 +2,10 @@ import React from 'react'
 
 function Header() {
   const headerLink = [
-    { text: "Home", id: 1, url: "/home" },
-    { text: "Blog", id: 2, url: "/blog" },
-    { text: "About", id: 3, url: "/about" },
-    { text: "Contact", id: 4, url: "/#" },
+    { text: "Home", id: 1, url: "home" },
+    { text: "Blog", id: 2, url: "blog" },
+    { text: "About", id: 3, url: "about" },
+    { text: "Contact", id: 4, url: "#" },
   ]
 
   return (
@@ -14,7 +14,7 @@ function Header() {
       <ul className="">
         <li className=''>
           {headerLink.map((link) => (
-            <a href={link.url} target='_blank' key={link.id} className=" hover:underline hover:delay-500 font-display3 lg:text-2xl xl:text-2xl xl:px-7 xl:py-3 lg:px-5 md:text-lg md:px-3 font-semibold px-1 rounded-md">
+            <a href={link.url} key={link.id} className=" hover:underline hover:delay-500 font-display3 lg:text-2xl xl:text-2xl xl:px-7 xl:py-3 lg:px-5 md:text-lg md:px-3 font-semibold px-1 rounded-md">
               {link.text}
           </a>
         ))}
