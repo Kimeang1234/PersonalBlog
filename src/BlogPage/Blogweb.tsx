@@ -64,7 +64,7 @@ function Blogweb() {
   return (
     <div className=" bg-gray-50 bg-cover min-h-screen">  
     <Header />
-      <div className=" pt-10 bg-cover pb-10 ">
+      <div className=" pt-10 bg-cover pb-10">
         <h1 className="text-center pb-10 font-semibold font-display3 text-2xl md:text-3xl lg:text-4xl">What to read next</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20"> 
           {blogposts.map((blogs) => (
@@ -87,7 +87,7 @@ function Blogweb() {
           <h2 className="text-base md:text-xl 2xl:pt-5 px-3 pb-6 pt-3">Sign up your email here to keep update on lastest news about technology.</h2>
           <div className="flex md:pt-5 pb-4 md:pb-6 justify-center md:text-xl">
             <input className="p-2 border-[1px] xl:px-5 border-black" type="text" placeholder="Email address" />
-            <button className="px-2 border-black bg-black xl:px-5 text-white border-[2px]">Sign Up</button>
+            <button className="px-2 border-black bg-black xl:px-5 hover:bg-white hover:text-black text-white border-[2px]">Sign Up</button>
           </div>
         </section>
       </div>
