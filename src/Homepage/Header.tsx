@@ -13,7 +13,7 @@ function Header() {
       <a href="/home" className="text-lg font-bold font-display2 md:text-2xl lg:text-3xl xl:text-4xl">Dealiest Blog</a>
       <nav className="">
         {headerLink.map((link) => (
-          <a href={link.url} target='_blank' key={link.id} className=" border-[1px] font-display3 lg:text-2xl xl:text-2xl xl:px-7 xl:py-3 lg:px-5 md:text-lg md:px-3 font-semibold px-1 rounded-md hover:bg-gray-100">
+          <a href={link.url} target='_blank' key={link.id} className=" hover:underline font-display3 lg:text-2xl xl:text-2xl xl:px-7 xl:py-3 lg:px-5 md:text-lg md:px-3 font-semibold px-1 rounded-md hover:bg-gray-100">
             {link.text}
           </a>
         ))}
