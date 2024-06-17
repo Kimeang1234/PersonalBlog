@@ -3,7 +3,7 @@ import RightContactFooter from './RightContactFooter'
 import LeftContactFooter from './LeftContactFooter'
 function Contactfooter() {
   return (
-    <div className=" flex py-10 flex-col-1 pb-20">
+    <div className="block md:flex md:py-10 md:flex-col-1 md:pb-20 pt-10 px-5">
       <LeftContactFooter />
       <RightContactFooter />
     </div>
