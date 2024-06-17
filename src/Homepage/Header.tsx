@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <div className="md:px-8 lg:px-10 pt-3 xl:px-12 md:py-4 lg:py-6 border-b-[2px] flex items-center text-center justify-between p-3">
-      <Link to="/" className="text-lg font-bold font-display2 md:text-2xl lg:text-3xl xl:text-4xl">Dealiest Blog</Link>
+      <Link to="/" className="text-lg font-bold pt-1 font-display2 md:text-2xl lg:text-3xl xl:text-4xl">Dealiest Blog</Link>
       <ul className="">
         <li className="">
           {headerLink.map((link) => (
