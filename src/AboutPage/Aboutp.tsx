@@ -7,7 +7,7 @@ function Aboutp() {
     <div className=''>
       <Header />
       <div className="bg-auto min-h-screen xl:bg-center" style={{ backgroundImage: `url(${backgroundImage})`, }}>
-        <div className=" absolute bottom-0 right-0 px-10 md:pb-10">
+        <div className=" absolute bottom-10 px-10 md:pb-10">
          <div className="pb-7 md:pb-10 lg:pb-13 xl:pb-16">
            <h1 className="text-5xl font-display2 font-bold md:text-6xl xl:text-7xl">About</h1>
             <h2 className='text-3xl font-display2 font-bold md:text-4xl xl:text-5xl md:pt-2 pb-4'>Me</h2>

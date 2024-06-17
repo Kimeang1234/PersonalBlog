@@ -63,7 +63,7 @@ function Blogweb() {
   ]
 
   return (
-    <div className=" bg-gray-50 bg-cover min-h-screen">
+    <div className="">
       <Header />
       <div className=" pt-10 bg-cover pb-10">
         <h1 className="text-center pb-10 font-semibold font-display3 text-2xl md:text-3xl lg:text-4xl">What to read next</h1>
@@ -75,7 +75,7 @@ function Blogweb() {
                   <img className="rounded-t-3xl w-full" src={blogs.image} alt="blog" />
                   <div className="p-6 lg:p-8 xl:p-10">
                     <h1 className="font-semibold line-clamp-1 font-display3 text-xl md:text-2xl lg:text-3xl hover:underline">{blogs.title}</h1>
-                    <p className=" line-clamp-3 pt-5 text-base md:text-lg font-display5 lg:text-xl">{blogs.content}</p>
+                    <p className=" line-clamp-3 pt-5 text-sm sm:text-lg md:text-lg font-display5 lg:text-xl">{blogs.content}</p>
                   </div>
                 </li>
               </Link>
