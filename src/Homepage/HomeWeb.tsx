@@ -2,9 +2,6 @@ import React from 'react';
 import Header from './Header';
 import backgroundImage from '../images/P2.jpg'; 
 import { Link } from 'react-router-dom';
-import Firstcomponent from './Firstcomponent';
-import Secondcomponent from './Secondcomponent';
-import Thirdcomponenet from './Thirdcomponent';
 function HomeWeb() {
   return (
     <div className="">
@@ -15,15 +12,12 @@ function HomeWeb() {
           <h2 className="text-base px-2 md:text-2xl font-display lg:text-3xl md:px-4 pt-10">Hello, welcome y'all, nice to see you here. Thanks for visiting this blog.</h2>
           <div className=" pt-12 md:pt-16 flex justify-center">
             <Link to="/blog" className="px-5 transition delay-150 duration-300 ease-in-out py-3 2xl:py-4 2xl:px-8 2xl:text-2xl font-semibold md:text-xl font-display2 rounded-lg bg-black hover:bg-white hover:text-black text-white shadow-lg">
-              See more
+              Read more
             </Link>
           </div>
         </div>
       </div>
       <div className="">
-        <Firstcomponent />
-        <Secondcomponent />
-        <Thirdcomponenet />
       </div>
     </div>
   );

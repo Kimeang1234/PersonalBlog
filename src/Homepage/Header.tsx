@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 function Header() {
   const headerLink = [
     { text: "Home", id: 1, url: "/" }, 
-    { text: "Blog", id: 2, url: "/blog" },
-    { text: "About", id: 3, url: "/about" },
-    { text: "Contact", id: 4, url: "/contact" },
+    { text: "Blog Post", id: 2, url: "/blog" },
+    { text: "About us", id: 3, url: "/about" },
+    { text: "Hire us", id: 4, url: "/contact" },
   ];
 
   return (

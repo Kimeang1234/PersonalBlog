@@ -9,12 +9,12 @@ function LeftContactFooter() {
       LowerText: "I enjoy translating your thoughts to our diversely skilled team for the best results",
     },]
   return (
-    <div className='block lg:w-1/2 lg:px-20'>
+    <div className='block pt-12 pr-4 pb-6'>
       {ContactText.map((ContactT, i) => (
         <ul key={i}>
-          <li className='justify-start border-r-[3px] border-black'>
-            <div className='xl:w-1/2'>
-              <p className=' text-lg xl:text-2xl pb-10'>{ContactT.Uppertext}</p>
+          <li className='justify-start'>
+            <div className='x-4'>
+              <p className='text-lg xl:text-2xl pb-10'>{ContactT.Uppertext}</p>
               <img src={ContactT.image} alt="Portrait of Chhon Kimeang." className='w-12 h-12 rounded-full' />
               <h2 className='pt-1 text-lg xl:pt-3 xl:text-2xl font-semibold'>{ContactT.LowerTitle}</h2>
               <p className="xl:text-lg xl:pt-3">"{ContactT.LowerText}"</p>

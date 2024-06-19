@@ -2,9 +2,11 @@ import React from 'react'
 import Header from 'Homepage/Header'
 import backgroundImage from '../images/P2.jpg'
 import { Link } from 'react-router-dom'
+import Firstcomponent from './Firstcomponent'
+import Blogfooter from 'BlogPage/Blogfooter'
 function Aboutp() {
   return (
-    <div className=''>
+    <div className='marquee overflow-hidden'>
       <Header />
       <div className="bg-auto min-h-screen xl:bg-center" style={{ backgroundImage: `url(${backgroundImage})`, }}>
         <div className=" absolute bottom-10 px-10 md:pb-10">
@@ -16,6 +18,8 @@ function Aboutp() {
           <Link to="/blog" className=' hover:bg-white hover:text-black md:py-3 md:text-xl md:px-6 bg-black text-white text-base font-bold py-2 px-3'>Read More</Link>
         </div>
       </div>
+        <Firstcomponent />
+        <Blogfooter />
     </div>
   )
 }
