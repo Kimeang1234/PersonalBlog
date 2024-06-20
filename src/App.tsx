@@ -6,17 +6,16 @@ import Aboutp from 'AboutPage/Aboutp';
 import ContactP from 'ContactPage/ContactP';
 function App() {
   return (
-      <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<HomeWeb />} />
-              <Route path="/home" element={<HomeWeb />} />
-              <Route path="/blog" element={<Blogweb />} />
-              <Route path="/about" element={<Aboutp />} />
-              <Route path="/contact" element={<ContactP />} />
-            </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeWeb />} />
+        <Route path="/blog" element={<Blogweb />} />
+        <Route path="/home" element={<HomeWeb />} />
+        <Route path="/about" element={<Aboutp />} />
+        <Route path="/contact" element={<ContactP />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-
-export default App
+export default App;

@@ -1,62 +1,62 @@
 import React from 'react'
 import grayball from '../images/grayball.jpg'
 import Blogfooter from './Blogfooter'
-import Header from 'Homepage/Header'
-import backgroundImage from '../images/P2.jpg'
 import { Link } from 'react-router-dom'
+import Header from 'Homepage/Header'
+import Secondcard from './Secondcard'
+import Firstcard from './Firstcard'
+import Thirdcard from './Thirdcard'
 function Blogweb() {
   const blogposts = [
     {
-      title: "How to make a website",
-      author: "<NAME>",
+      title: "Exploring Cloud Computing",
       date: "2021-05-01",
       id: 1,
-      content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
+      content: "Dive into the world of cloud computing and discover its significance in modern IT infrastructure. Learn about various cloud service models (IaaS, PaaS, SaaS) and major cloud providers like AWS, Azure, and Google Cloud. Understand how cloud computing enhances scalability, flexibility, and cost-efficiency for businesses.",
       image: grayball,
-      url: "/",
+      url: "",
     },
     {
-      title: "How to make a website",
-      author: "<NAME>",
+      title: "Introduction to Cybersecurity",
       date: "2021-05-01",
       id: 2,
-      content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
+      content: "Understand the basics of cybersecurity and its importance in protecting sensitive information and systems. Explore key concepts such as encryption, firewalls, intrusion detection systems, and best practices for maintaining security. Learn about the common threats and vulnerabilities and how to safeguard against them.",
       image: grayball,
       url: "https://www.example.com",
     },
     {
-      title: "How to make a website",
+      title: "The Fundamentals of Networking",
       author: "<NAME>",
       date: "2021-05-01",
       id: 3,
-      content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
+      content: "Gain a solid foundation in networking principles, including the OSI model, TCP/IP protocols, and network topologies. Learn about essential networking hardware like routers, switches, and modems, as well as wireless networking technologies. Discover how networking enables seamless communication and data transfer within and between organizations.",
       image: grayball,
       url: "https://www.example.com",
     },
     {
-      title: "How to make a website",
+      title: "Basics of Database Management",
       author: "<NAME>",
       date: "2021-05-01",
       id: 4,
-      content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
+      content: "Delve into the world of databases and their critical role in storing and managing data. Learn about relational databases, SQL, and NoSQL databases, and understand how to design and query databases effectively. Explore database management systems (DBMS) and their applications in real-world scenarios.",
       image: grayball,
       url: "https://www.example.com",
     },
     {
-      title: "How to make a website This is a blog post about how to make a website",
+      title: "Introduction to Programming and Software Development",
       author: "<NAME>",
       date: "2021-05-01",
       id: 5,
-      content: "  This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make, This is a blog post about how to make a website",
+      content: "Embark on your journey into programming by learning fundamental concepts like algorithms, data structures, and object-oriented programming. Explore popular programming languages such as Python, Java, and JavaScript, and understand the software development lifecycle (SDLC) from requirements gathering to deployment and maintenance.",
       image: grayball,
       url: "https://www.example.com",
     },
     {
-      title: "How to make a website",
+      title: "Understanding IT Project Management",
       author: "<NAME>",
       date: "2021-05-01",
       id: 6,
-      content: "This is a blog post about how to make a website, This is a blog post about how to make a website, This is a blog post about how to make a website",
+      content: "Discover the essentials of IT project management and how to successfully plan, execute, and monitor IT projects. Learn about project management methodologies like Agile, Scrum, and Waterfall, and understand the importance of time, cost, and quality management. Gain insights into risk management and effective communication strategies within project teams.",
       image: grayball,
       url: "https://www.facebook.com/",
     },
@@ -67,11 +67,11 @@ function Blogweb() {
       <Header />
       <div className=" min-h-screen pt-10 bg-cover pb-10">
         <h1 className="text-center pb-10 font-semibold font-display5 text-2xl md:text-3xl lg:text-4xl">What to read next</h1>
-        <div className="grid xl:px-96 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-8 lg:px-12">
+        <div className="grid xl:px-52 2xl:px-96 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-8 lg:px-12">
           {blogposts.map((blogs) => (
             <ul key={blogs.id} className="p-3">
               <Link to={blogs.url}>
-                <li className="rounded-xl shadow-2xl hover:shadow-2xl hover:shadow-black bg-slate-100">
+                <li className="rounded-xl shadow-2xl hover:shadow-2xl hover:shadow-black bg-none">
                   <img className="rounded-t-xl" src={blogs.image} alt="blog" />
                   <div className="p-6 lg:p-8 xl:p-10">
                     <h1 className="font-semibold line-clamp-1 font-display3 text-xl md:text-2xl lg:text-3xl hover:underline">{blogs.title}</h1>
@@ -95,6 +95,9 @@ function Blogweb() {
       </div>
       <footer className="pt-10 marquee overflow-hidden">
         <Blogfooter />
+        <Firstcard />
+        <Secondcard />
+        <Thirdcard />
       </footer>
     </div>
   )

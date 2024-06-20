@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import backgroundImage from '../images/P2.jpg'; 
 import { Link } from 'react-router-dom';
+import Blogweb from 'BlogPage/Blogweb';
 function HomeWeb() {
   return (
     <div className="">
@@ -16,8 +17,6 @@ function HomeWeb() {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="">
       </div>
     </div>
   );
