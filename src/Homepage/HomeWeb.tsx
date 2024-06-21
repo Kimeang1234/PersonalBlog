@@ -2,12 +2,12 @@ import React from 'react';
 import Header from './Header';
 import backgroundImage from '../images/P2.jpg'; 
 import { Link } from 'react-router-dom';
-import Blogweb from 'BlogPage/Blogweb';
+import Blogfooter from 'BlogPage/Blogfooter';
 function HomeWeb() {
   return (
-    <div className="">
+    <div className="marquee overflow-hidden">
       <Header />
-      <div className="min-h-screen min-w-full flex flex-col items-center bg-auto xl:bg-center justify-center py-16" style={{ backgroundImage: `url(${backgroundImage})`, }}>
+      <div className="min-h-screen min-w-full flex flex-col items-center bg-auto xl:bg-center justify-center py-16" style={{ backgroundImage: `url(${"backgroundImage"})`, }}>
         <div className="text-center px-4">
           <h1 className="font-display2 font-bold px-2 text-3xl md:text-5xl">Welcome to my blog post</h1>
           <h2 className="text-base px-2 md:text-2xl font-display lg:text-3xl md:px-4 pt-10">Hello, welcome y'all, nice to see you here. Thanks for visiting this blog.</h2>
@@ -18,6 +18,7 @@ function HomeWeb() {
           </div>
         </div>
       </div>
+      <Blogfooter />
     </div>
   );
 }

@@ -90,9 +90,9 @@ function Blogweb() {
           <section className="block bg-gray-50 bg-cover text-center mx-auto lg:w-1/2 p-4 h-auto border-t-[10px] border-[1px] border-black">
             <h1 className="text-xl md:text-3xl 2xl:text-4xl md:pt-5 pb-3 lg:pt-10 font-bold">Sign up for the newsletter</h1>
             <h2 className="text-base md:text-xl 2xl:pt-5 px-3 pb-6 pt-3">Sign up your email here to keep update on lastest news about technology.</h2>
-            <div className="flex md:pt-5 pb-4 md:pb-6 justify-center md:text-xl">
+            <div className="flex text-xs md:pt-5 pb-4 md:pb-6 justify-center md:text-xl">
               <input className="p-2 border-[1px] xl:px-5 border-black" type="text" placeholder="Email address" />
-              <button className="px-2 border-black bg-black xl:px-5 hover:bg-white hover:text-black text-white border-[2px]">Sign Up</button>
+              <button className=" border-black bg-black xl:px-5 hover:bg-white hover:text-black text-white border-[2px]">Sign Up</button>
             </div>
           </section>
         </div>
