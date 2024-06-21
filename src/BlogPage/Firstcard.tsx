@@ -2,13 +2,14 @@ import React from 'react'
 import pppp from '../images/Cloud.jpg'
 import Blogfooter from './Blogfooter'
 import Header from 'Homepage/Header'
+import CloudComputing from '../images/Cloudcomputing.jpg'
 function Firstcard() {
   return (
     <div className="min-h-screen sm:text-start marquee overflow-hidden">
       <Header />
       <div className="xl:mx-auto px-6 xl:w-1/2">
         <h1 className="text-center text-2xl pb-8 pt-10 py-4 font-semibold">Exploring Cloud Computing</h1>
-        <img src={pppp} className="w-xs h-auto lg:max-w-2xl mx-auto" alt="cloudEngine" />
+        <img src={CloudComputing} className="lg:w-[672px] lg:h-[378px] mx-auto" alt="cloudEngine" />
         <p className='pt-5 text-base md:text-lg'>The shift to cloud computing is not just a technological change but a fundamental shift in how businesses operate. It offers unparalleled flexibility, enabling companies to innovate and respond to market demands more rapidly. As the cloud continues to evolve, it opens up new opportunities for businesses to harness the power of data, analytics, and artificial intelligence.</p>
         <h2 className='text-2xl pt-8 py-4 font-semibold'>Understanding Cloud Computing</h2>
         <p className='pt-5 text-base md:text-lg'>Cloud computing has revolutionized how we think about IT infrastructure. It allows businesses to access computing resources over the internet, eliminating the need for physical hardware and reducing costs significantly. With cloud computing, companies can scale their operations quickly and efficiently.</p>

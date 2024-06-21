@@ -3,12 +3,13 @@ import grayball from '../images/grayball.jpg'
 import Blogfooter from './Blogfooter'
 import { Link } from 'react-router-dom'
 import Header from 'Homepage/Header'
-import Firstcard from './Firstcard'
-import Secondcard from './Secondcard'
-import Fourthcard from './Fourthcard'
-import Thirdcardd from './Thirdcardd'
-import Fifthcard from './Fifthcard'
-import Sixthcard from './Sixthcard'
+import CloudComputing from '../images/Cloudcomputing.jpg'
+import CyberPic from '../images/Cyber.jpg'
+import NetworkPic2 from '../images/network(3).jpg'
+import DataBasePic2 from '../images/database(2).jpg'
+import ProgramingPic4 from '../images/Program.webp'
+import PorjectManage from '../images/ProjectManagement.jpg'
+
 function Blogweb() {
   const blogposts = [
     {
@@ -16,7 +17,7 @@ function Blogweb() {
       date: "2021-05-01",
       id: 1,
       content: "Dive into the world of cloud computing and discover its significance in modern IT infrastructure. Learn about various cloud service models (IaaS, PaaS, SaaS) and major cloud providers like AWS, Azure, and Google Cloud. Understand how cloud computing enhances scalability, flexibility, and cost-efficiency for businesses.",
-      image: grayball,
+      image: CloudComputing,
       url: "/Exploring-Cloud-Computing",
     },
     {
@@ -24,7 +25,7 @@ function Blogweb() {
       date: "2021-05-01",
       id: 2,
       content: "Understand the basics of cybersecurity and its importance in protecting sensitive information and systems. Explore key concepts such as encryption, firewalls, intrusion detection systems, and best practices for maintaining security. Learn about the common threats and vulnerabilities and how to safeguard against them.",
-      image: grayball,
+      image: CyberPic,
       url: "/Introduction-to-Cybersecurity",
     },
     {
@@ -33,7 +34,7 @@ function Blogweb() {
       date: "2021-05-01",
       id: 3,
       content: "Gain a solid foundation in networking principles, including the OSI model, TCP/IP protocols, and network topologies. Learn about essential networking hardware like routers, switches, and modems, as well as wireless networking technologies. Discover how networking enables seamless communication and data transfer within and between organizations.",
-      image: grayball,
+      image: NetworkPic2,
       url: "/The-Fundamentals-Of-Networking",
     },
     {
@@ -42,7 +43,7 @@ function Blogweb() {
       date: "2021-05-01",
       id: 4,
       content: "Delve into the world of databases and their critical role in storing and managing data. Learn about relational databases, SQL, and NoSQL databases, and understand how to design and query databases effectively. Explore database management systems (DBMS) and their applications in real-world scenarios.",
-      image: grayball,
+      image: DataBasePic2,
       url: "/Basics-of-Databse-Management",
     },
     {
@@ -51,7 +52,7 @@ function Blogweb() {
       date: "2021-05-01",
       id: 5,
       content: "Embark on your journey into programming by learning fundamental concepts like algorithms, data structures, and object-oriented programming. Explore popular programming languages such as Python, Java, and JavaScript, and understand the software development lifecycle (SDLC) from requirements gathering to deployment and maintenance.",
-      image: grayball,
+      image: ProgramingPic4,
       url: "/Introduction-to-Programming",
     },
     {
@@ -60,7 +61,7 @@ function Blogweb() {
       date: "2021-05-01",
       id: 6,
       content: "Discover the essentials of IT project management and how to successfully plan, execute, and monitor IT projects. Learn about project management methodologies like Agile, Scrum, and Waterfall, and understand the importance of time, cost, and quality management. Gain insights into risk management and effective communication strategies within project teams.",
-      image: grayball,
+      image: PorjectManage,
       url: "/Understanding-It-Project",
     },
   ]
@@ -70,15 +71,15 @@ function Blogweb() {
       <Header />
       <div className=" min-h-screen pt-10 bg-cover pb-10">
         <h1 className="text-center pb-10 font-semibold font-display5 text-2xl md:text-3xl lg:text-4xl">What to read next</h1>
-        <div className="grid xl:px-52 2xl:px-96 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-8 lg:px-12">
+        <div className="grid xl:px-52 2xl:px-96 md:grid-cols-2 xl:grid-cols-3 px-4 lg:px-36">
           {blogposts.map((blogs) => (
             <ul key={blogs.id} className="p-3">
               <Link to={blogs.url} key={blogs.id}>
                 <li className="rounded-xl shadow-2xl hover:shadow-2xl hover:shadow-black bg-none">
-                  <img className="rounded-t-xl" src={blogs.image} alt="blog" />
-                  <div className="pb-3">
-                    <h1 className="pl-2 pt-3 font-display3 font-semibold line-clamp-1 text-xl md:text-2xl hover:underline">{blogs.title}</h1>
-                    <p className=" line-clamp-2 pr-1 text-balance pl-3 pt-5 text-sm sm:text-lg md:text-lg font-display5 lg:text-xl">{blogs.content}</p>
+                  <img className="rounded-t-xl w-full h-[195px]" src={blogs.image} alt="blog" />
+                  <div className="px-5 py-8">
+                    <h1 className="text-xl xl:text-2xl hover:underline line-clamp-1">{blogs.title}</h1>
+                    <p className=" text-lg pt-4 line-clamp-3">{blogs.content}</p>
                   </div>
                 </li>
               </Link>

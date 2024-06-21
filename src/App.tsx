@@ -6,8 +6,8 @@ import Aboutp from 'AboutPage/Aboutp';
 import ContactP from 'ContactPage/ContactP';
 import Firstcard from 'BlogPage/Firstcard';
 import Secondcard from 'BlogPage/Secondcard';
-import Thirdcardd from 'BlogPage/Thirdcardd';
 import Fourthcard from 'BlogPage/Fourthcard';
+import Thirdcardd from 'BlogPage/Thridcardd';
 import Fifthcard from 'BlogPage/Fifthcard';
 import Sixthcard from 'BlogPage/Sixthcard';
 function App() {

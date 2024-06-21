@@ -2,13 +2,14 @@ import React from 'react'
 import Blogfooter from './Blogfooter'
 import ddd from '../images/Bg.jpg'
 import Header from 'Homepage/Header'
+import PorjectManage from '../images/ProjectManagement.jpg'
 function Sixthcard() {
   return (
     <div className="min-h-screen sm:text-start marquee overflow-hidden">
       <Header />
       <div className="xl:mx-auto px-6 xl:w-1/2">
         <h1 className="text-center text-2xl pb-8 pt-10 py-4 font-semibold">Understanding IT Project Management</h1>
-        <img src={ddd} className="w-xs h-auto lg:max-w-2xl mx-auto" alt="Cybersecurity" />
+        <img src={PorjectManage} className="lg:w-[672px] lg:h-[378px] mx-auto" alt="Cybersecurity" />
         <p className='pt-5 text-base md:text-lg'>IT project management involves overseeing technology projects from inception to completion, ensuring they meet objectives within the constraints of time, cost, and quality. Successful IT project management requires a combination of technical knowledge, organizational skills, and effective communication.</p>
         <h2 className='text-2xl pt-8 py-4 font-semibold'>IT Project Management</h2>
         <p className='pt-5 text-base md:text-lg'>IT project management involves overseeing technology projects from inception to completion, ensuring they meet objectives within the constraints of time, cost, and quality. Successful IT project management requires a combination of technical knowledge, organizational skills, and effective communication.</p>

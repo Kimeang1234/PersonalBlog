@@ -1,14 +1,14 @@
 import React from 'react'
 import Blogfooter from './Blogfooter'
-import jjj from '../images/Bg.jpg'
 import Header from 'Homepage/Header'
+import ProgramingPic4 from '../images/Program.webp'
 function Fifthcard() {
   return (
     <div className="min-h-screen sm:text-start marquee overflow-hidden">
       <Header />
       <div className="xl:mx-auto px-6 xl:w-1/2">
         <h1 className="text-center text-2xl pb-8 pt-10 py-4 font-semibold">Introduction to Programming and Software Development</h1>
-        <img src={jjj} className="w-xs h-auto lg:max-w-2xl mx-auto" alt="Cybersecurity" />
+        <img src={ProgramingPic4} className="lg:w-[672px] lg:h-[378px] mx-auto" alt="Cybersecurity" />
         <p className='pt-5 text-base md:text-lg'>No matter your background or industry, understanding programming and software development is essential in today's tech-driven world. Join us as we embark on a journey into the fundamentals of coding and software creation.</p>
         <h2 className='text-2xl pt-8 py-4 font-semibold'>Understanding Programming Fundamentals</h2>
         <p className='pt-5 text-base md:text-lg'>Programming is the process of creating instructions for computers to perform specific tasks. Software development encompasses the entire lifecycle of building software applications, from initial planning to final deployment and maintenance.</p>

@@ -2,13 +2,14 @@ import React from 'react'
 import ooo from '../images/grayball.jpg'
 import Blogfooter from './Blogfooter'
 import Header from 'Homepage/Header'
+import CyberPic from '../images/Cyber.jpg'
 function Secondcard() {
   return (
     <div className="min-h-screen sm:text-start marquee overflow-hidden">
       <Header />
       <div className="xl:mx-auto px-6 xl:w-1/2">
         <h1 className="text-center text-2xl pb-8 pt-10 py-4 font-semibold">Introduction to Cybersecurity</h1>
-        <img src={ooo} className="w-xs h-auto lg:max-w-2xl mx-auto" alt="Cybersecurity" />
+        <img src={CyberPic} className="lg:w-[672px] lg:h-[378px] mx-auto" alt="Cybersecurity" />
         <p className='pt-5 text-base md:text-lg'>No matter your background or industry, understanding cybersecurity is crucial in today's interconnected world. Join us as we delve into the critical field of cybersecurity.</p>
         <h2 className='text-2xl pt-8 py-4 font-semibold'>Understanding Cybersecurity</h2>
         <p className='pt-5 text-base md:text-lg'>In today’s digital age, cybersecurity is paramount for protecting sensitive information and ensuring the integrity of systems. Cybersecurity encompasses a range of practices, tools, and concepts designed to safeguard data from cyber threats and vulnerabilities.</p>
