@@ -1,9 +1,11 @@
 import React from 'react'
 import pppp from '../images/Cloud.jpg'
 import Blogfooter from './Blogfooter'
+import Header from 'Homepage/Header'
 function Firstcard() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen sm:text-start marquee overflow-hidden">
+      <Header />
       <div className="xl:mx-auto px-6 xl:w-1/2">
         <h1 className="text-center text-2xl pb-8 pt-10 py-4 font-semibold">Exploring Cloud Computing</h1>
         <img src={pppp} className="w-xs h-auto lg:max-w-2xl mx-auto" alt="cloudEngine" />

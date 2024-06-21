@@ -3,9 +3,12 @@ import grayball from '../images/grayball.jpg'
 import Blogfooter from './Blogfooter'
 import { Link } from 'react-router-dom'
 import Header from 'Homepage/Header'
-import Secondcard from './Secondcard'
 import Firstcard from './Firstcard'
-import Thirdcard from './Thirdcard'
+import Secondcard from './Secondcard'
+import Fourthcard from './Fourthcard'
+import Thirdcardd from './Thirdcardd'
+import Fifthcard from './Fifthcard'
+import Sixthcard from './Sixthcard'
 function Blogweb() {
   const blogposts = [
     {
@@ -14,7 +17,7 @@ function Blogweb() {
       id: 1,
       content: "Dive into the world of cloud computing and discover its significance in modern IT infrastructure. Learn about various cloud service models (IaaS, PaaS, SaaS) and major cloud providers like AWS, Azure, and Google Cloud. Understand how cloud computing enhances scalability, flexibility, and cost-efficiency for businesses.",
       image: grayball,
-      url: "",
+      url: "/Exploring-Cloud-Computing",
     },
     {
       title: "Introduction to Cybersecurity",
@@ -22,7 +25,7 @@ function Blogweb() {
       id: 2,
       content: "Understand the basics of cybersecurity and its importance in protecting sensitive information and systems. Explore key concepts such as encryption, firewalls, intrusion detection systems, and best practices for maintaining security. Learn about the common threats and vulnerabilities and how to safeguard against them.",
       image: grayball,
-      url: "https://www.example.com",
+      url: "/Introduction-to-Cybersecurity",
     },
     {
       title: "The Fundamentals of Networking",
@@ -31,7 +34,7 @@ function Blogweb() {
       id: 3,
       content: "Gain a solid foundation in networking principles, including the OSI model, TCP/IP protocols, and network topologies. Learn about essential networking hardware like routers, switches, and modems, as well as wireless networking technologies. Discover how networking enables seamless communication and data transfer within and between organizations.",
       image: grayball,
-      url: "https://www.example.com",
+      url: "/The-Fundamentals-Of-Networking",
     },
     {
       title: "Basics of Database Management",
@@ -40,7 +43,7 @@ function Blogweb() {
       id: 4,
       content: "Delve into the world of databases and their critical role in storing and managing data. Learn about relational databases, SQL, and NoSQL databases, and understand how to design and query databases effectively. Explore database management systems (DBMS) and their applications in real-world scenarios.",
       image: grayball,
-      url: "https://www.example.com",
+      url: "/Basics-of-Databse-Management",
     },
     {
       title: "Introduction to Programming and Software Development",
@@ -49,7 +52,7 @@ function Blogweb() {
       id: 5,
       content: "Embark on your journey into programming by learning fundamental concepts like algorithms, data structures, and object-oriented programming. Explore popular programming languages such as Python, Java, and JavaScript, and understand the software development lifecycle (SDLC) from requirements gathering to deployment and maintenance.",
       image: grayball,
-      url: "https://www.example.com",
+      url: "/Introduction-to-Programming",
     },
     {
       title: "Understanding IT Project Management",
@@ -58,7 +61,7 @@ function Blogweb() {
       id: 6,
       content: "Discover the essentials of IT project management and how to successfully plan, execute, and monitor IT projects. Learn about project management methodologies like Agile, Scrum, and Waterfall, and understand the importance of time, cost, and quality management. Gain insights into risk management and effective communication strategies within project teams.",
       image: grayball,
-      url: "https://www.facebook.com/",
+      url: "/Understanding-It-Project",
     },
   ]
 
@@ -70,12 +73,12 @@ function Blogweb() {
         <div className="grid xl:px-52 2xl:px-96 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-8 lg:px-12">
           {blogposts.map((blogs) => (
             <ul key={blogs.id} className="p-3">
-              <Link to={blogs.url}>
+              <Link to={blogs.url} key={blogs.id}>
                 <li className="rounded-xl shadow-2xl hover:shadow-2xl hover:shadow-black bg-none">
                   <img className="rounded-t-xl" src={blogs.image} alt="blog" />
-                  <div className="p-6 lg:p-8 xl:p-10">
-                    <h1 className="font-semibold line-clamp-1 font-display3 text-xl md:text-2xl lg:text-3xl hover:underline">{blogs.title}</h1>
-                    <p className=" line-clamp-3 pt-5 text-sm sm:text-lg md:text-lg font-display5 lg:text-xl">{blogs.content}</p>
+                  <div className="pb-3">
+                    <h1 className="pl-2 pt-3 font-display3 font-semibold line-clamp-1 text-xl md:text-2xl hover:underline">{blogs.title}</h1>
+                    <p className=" line-clamp-2 pr-1 text-balance pl-3 pt-5 text-sm sm:text-lg md:text-lg font-display5 lg:text-xl">{blogs.content}</p>
                   </div>
                 </li>
               </Link>
@@ -95,9 +98,6 @@ function Blogweb() {
       </div>
       <footer className="pt-10 marquee overflow-hidden">
         <Blogfooter />
-        <Firstcard />
-        <Secondcard />
-        <Thirdcard />
       </footer>
     </div>
   )

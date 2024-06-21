@@ -3,6 +3,7 @@ import Header from 'Homepage/Header'
 import backgroundImage from '../images/P2.jpg'
 import { Link } from 'react-router-dom'
 import Firstcomponent from './Firstcomponent'
+import Thirdcomponenet from './Thirdcomponent'
 import Blogfooter from 'BlogPage/Blogfooter'
 function Aboutp() {
   return (
