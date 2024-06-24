@@ -26,6 +26,7 @@ module.exports = {
         "secondPrimary": "#224741",
         "thirdPrimary": "#b4b4b4",
         "forthPrmary": "#494848",
+        "heyhey": "#CFCFCF",
       }
     },
   },

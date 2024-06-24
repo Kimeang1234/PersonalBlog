@@ -10,6 +10,7 @@ import Fourthcard from 'BlogPage/Fourthcard';
 import Thirdcardd from 'BlogPage/Thridcardd';
 import Fifthcard from 'BlogPage/Fifthcard';
 import Sixthcard from 'BlogPage/Sixthcard';
+import { Analytics } from '@vercel/analytics/react';
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Introduction-to-Programming" element={<Fifthcard />}/>
         <Route path="/Understanding-It-Project" element={<Sixthcard />}/>
       </Routes>
+      <Analytics />
     </BrowserRouter>
   );
 }

@@ -71,12 +71,12 @@ function Blogweb() {
       <Header />
       <div className=" min-h-screen pt-10 bg-cover pb-10">
         <h1 className="text-center pb-10 font-semibold font-display5 text-2xl md:text-3xl lg:text-4xl">What to read next</h1>
-        <div className="grid xl:px-52 2xl:px-96 md:grid-cols-2 xl:grid-cols-3 px-4 lg:px-36">
+        <div className="grid xl:px-52 2xl:px-96 md:grid-cols-2 lg:grid-cols-3 px-5 sm:px-16 lg:px-36">
           {blogposts.map((blogs) => (
             <ul key={blogs.id} className="p-3">
               <Link to={blogs.url} key={blogs.id}>
                 <li className="rounded-xl shadow-2xl hover:shadow-2xl hover:shadow-black bg-none">
-                  <img className="rounded-t-xl w-full h-[195px]" src={blogs.image} alt="blog" />
+                  <img className="rounded-t-xl w-full h-[180px] md:h-[160px] xl:h-[200px]" src={blogs.image} alt="blog" />
                   <div className="px-5 py-8">
                     <h1 className="text-xl xl:text-2xl hover:underline line-clamp-1">{blogs.title}</h1>
                     <p className=" text-lg pt-4 line-clamp-3">{blogs.content}</p>
