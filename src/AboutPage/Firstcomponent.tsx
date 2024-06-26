@@ -6,7 +6,7 @@ function Firstcomponent() {
     <div className="min-h-screen pt-10 px-6 sm:w-2/3 mx-auto">
       <div className="2xl:flex 2xl:flex-row">
         <div className="pr-5 border-t-[2px] 2xl:w-1/2 border-black ">
-          <div className=" 2xl:text-3xl text-center md:text-start pt-5 2xl:py-5 font-semibold text-thirdPrimary">ABOUT</div>
+          <div className=" 2xl:text-3xl text-center md:text-start pt-5 2xl:py-5 font-semibold text-gray-500">ABOUT</div>
           <h1 className='2xl:text-lg'>
             I am <span className=" font-semibold text-xl">Chhon KimEang</span>, web designers, and WordPress developers. We have been working with WordPress for over ten years, and from the beginning we operate in the IT consultancy industry (specifically in the WordPress ecosystem). You can find us at Lime Street helping WordPress users with any issue they have. We have many years of experience in making websites & plugins for clients from around the world. We are Trusted Authors and members of the Theme Review Team at wordpress.org. <span className=" font-semibold"> We create free WordPress themes </span> and plugins all available in the wordpress.org directory.
           </h1>
