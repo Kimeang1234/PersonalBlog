@@ -9,7 +9,8 @@ function Aboutp() {
   return (
     <div className='marquee overflow-hidden'>
       <Header />
-      <div className="bg-auto min-h-screen xl:bg-center" style={{ backgroundImage: `url(${"backgroundImage"})`, }}>
+      <div className='bg-gray-100 bg-cover'>
+      <div className="  min-h-screen">
         <div className=" absolute bottom-10 px-10 md:pb-10">
          <div className="pb-7 md:pb-10 lg:pb-13 xl:pb-16">
            <h1 className="text-5xl font-display2 font-bold md:text-6xl xl:text-7xl">About</h1>
@@ -22,6 +23,7 @@ function Aboutp() {
         <Firstcomponent />
         <Blogfooter />
     </div>
+      </div>
   )
 }
 
