@@ -76,7 +76,7 @@ function Blogweb() {
             <ul key={blogs.id} className="p-3">
               <Link to={blogs.url} key={blogs.id}>
                 <li className="rounded-xl mx-auto bg-white shadow-2xl hover:shadow-2xl hover:shadow-black bg-none">
-                  <img className="rounded-t-xl sm:h-[190px] md:h-[132px] lg:h-[152px] w-full h-[150px]" src={blogs.image} alt="blog" />
+                  <img className="rounded-t-xl sm:h-[190px] md:h-[132px] lg:h-[152px] w-full h-[200px]" src={blogs.image} alt="blog" />
                   <div className="px-5 py-8">
                     <h1 className="text-xl xl:text-2xl hover:underline line-clamp-1">{blogs.title}</h1>
                     <p className=" text-lg pt-4 line-clamp-3">{blogs.content}</p>
