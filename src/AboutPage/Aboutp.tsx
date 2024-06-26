@@ -9,7 +9,7 @@ function Aboutp() {
   return (
     <div className='marquee overflow-hidden'>
       <Header />
-      <div className='bg-gray-100 bg-cover'>
+      <div className='bg-gray-50 bg-cover'>
       <div className="  min-h-screen">
         <div className=" absolute bottom-10 px-10 md:pb-10">
          <div className="pb-7 md:pb-10 lg:pb-13 xl:pb-16">
