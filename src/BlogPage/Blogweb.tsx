@@ -71,7 +71,7 @@ function Blogweb() {
       <Header />
       <div className="min-h-screen pt-10 640px bg-gray-100 bg-cover pb-10">
         <h1 className="text-center pb-10 font-semibold font-display5 text-2xl md:text-3xl lg:text-4xl">What to read next</h1>
-        <div className="w-[311px] sm:w-[500px] lg:w-[1100px] xl:w-[1300px] 2xl:w-[1700px] md:w-[640px] mx-auto grid xl:px-52 2xl:px-96 md:grid-cols-2 lg:grid-cols-3 px-5 sm:px-16 lg:px-36">
+        <div className="sm:w-[500px] lg:w-[1100px] xl:w-[1300px] 2xl:w-[1700px] md:w-[640px] mx-auto grid xl:px-52 2xl:px-96 md:grid-cols-2 lg:grid-cols-3 px-5 sm:px-16 lg:px-36">
           {blogposts.map((blogs) => (
             <ul key={blogs.id} className="p-3">
               <Link to={blogs.url} key={blogs.id}>
