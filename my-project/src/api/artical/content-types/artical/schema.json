@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articals",
+  "info": {
+    "singularName": "artical",
+    "pluralName": "articals",
+    "displayName": "Artical",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Article": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "topic": {
+      "type": "text"
+    }
+  }
+}
